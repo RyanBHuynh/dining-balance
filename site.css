@@ -3,6 +3,9 @@ body {
   color: black;
 }
 
+p {
+  font-family: Verdana, Helvetica, sans-serif;
+}
 h1.party {
   font-family: Verdana, Helvetica, sans-serif;
 }

@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
+  <link href="site.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="site.js" type="text/javascript"></script>
+
   <head>
-    <title>Welcome to my Website</title>
-    <link href="site.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src="site.js" type="text/javascript"></script>
+    <title>Mizzou Dining Balance Calculator</title>
+    
   </head>
   <body>
-    <h1 class="party">Welcome to my Website!</h1>
-    <p>It's time to <strong class="party">publish some pages.</strong></p>
+    <h1>>Mizzou Dining Balance Calculator</h1>
+    <p>This website calculates how much you can spend per day to get a balance of $0 by the end of the fall semester.</p>
+    <p>Put in your dining balance below:</p>
+    <form id="frm1">
+      Current Balance: <input type="number" name="fname" value = "0"><br>
+    </form>
+
+    <p>Click the button below to get your answer:</p>
+    <button onclick="calculateDailySpendRate()">Calculate</button>
   </body>
 </html>
