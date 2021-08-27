@@ -11,6 +11,11 @@ p,form,h1 {
   width: 50%;
 }
 
+button {
+  text-align: center;
+  margin: auto;
+}
+
 .center {
   margin: auto;
   width: 50%; 
