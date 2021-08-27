@@ -4,12 +4,19 @@ body {
   text-align: center;
 }
 
-p,form,button {
+p,form,button,h1 {
   font-family: Verdana, Helvetica, sans-serif;
   text-align: center;
   margin: auto;
   width: 50%;
 }
+
+.center {
+  margin: auto;
+  width: 50%; 
+  text-align: center;
+}
+
 h1.party {
   font-family: Verdana, Helvetica, sans-serif;
 }
