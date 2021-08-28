@@ -4,8 +4,6 @@
         var input = document.getElementById("frm1");
         var res = parseFloat(input.elements[0].value); //Convert the values to floats and print them
         var text = res.toString();
-        
-        document.getElementById("demo").innerHTML = text; //Print value to demo
       
         document.getElementById("today").innerHTML = new Date().getFullYear();
       
