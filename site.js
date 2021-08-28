@@ -1,4 +1,4 @@
-(function( site, undefined ) {
+//(function( site, undefined ) {
 
     function calculateDailySpendRate() {
         var input = document.getElementById("frm1");
@@ -35,7 +35,7 @@
         window.setTimeout(site.partypartyparty, this.timeout);
     };
 
-}( window.site = window.site || {} ));
+//}( window.site = window.site || {} ));
 
-site.partypartyparty();
+//site.partypartyparty();
 
