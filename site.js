@@ -5,7 +5,12 @@
         var res = parseFloat(input.elements[0].value); //Convert the values to floats and print them
         var text = res.toString();
       
-        document.getElementById("today").innerHTML = new Date().getFullYear();
+        n = new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+
+        document.getElementById("today").innerHTML = m + "/" + d + "/" + y;
       
     };
 
