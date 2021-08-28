@@ -7,7 +7,7 @@
         
         document.getElementById("demo").innerHTML = text; //Print value to demo
       
-          document.getElementById("today").innerHTML = new Date().getFullYear();
+        document.getElementById("today").innerHTML = new Date().getFullYear();
       
     };
 
