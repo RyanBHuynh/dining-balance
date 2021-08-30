@@ -7,11 +7,11 @@ function calculateDailySpendRate() {
 
     today = new Date(); //Keeps track of today's date
     var endOfSemester = new Date(today.getFullYear,11,17); //Keeps track of the end of the semester
-      
-    n = endOfSemester
-    y = n.getFullYear();
-    m = n.getMonth() + 1;
-    d = n.getDate();
+
+//Store the last day of the semester
+    y = endOfSemester.getFullYear();
+    m = endOfSemester.getMonth() + 1;
+    d = endOfSemester.getDate();
 
     document.getElementById("today").innerHTML = "The semester ends on " + m + "/" + d + "/" + y; 
 }
