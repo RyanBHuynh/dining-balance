@@ -16,6 +16,8 @@ function calculateDailySpendRate() {
     var input = document.getElementById("frm1");
     var res = parseFloat(input.elements[0].value); //Convert the values to floats and print them
     var text = res.toString();
+
+    onload();
 }
 
 window.onload = onload; //Call onload function when the site loads
