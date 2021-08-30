@@ -12,5 +12,7 @@ function calculateDailySpendRate() {
     m = endOfSemester.getMonth() + 1;
     d = endOfSemester.getDate();
 
-    document.getElementById("today").innerHTML = "The semester ends on " + m + "/" + d + "/" + y; 
+//Print the last day of the semester    
+    document.getElementById("today").innerHTML = endOfSemester;
+//    document.getElementById("today").innerHTML = "The semester ends on " + m + "/" + d + "/" + y; 
 }
