@@ -11,17 +11,22 @@
 
   <body onload="onload()">
     <h1>MU Dining Balance Calculator</h1><br>
-    <p>This website calculates how much you can spend per day to get a balance of $0 by the end of the fall semester.</p><br>
+    <p>This website calculates how much you can spend per day to get a balance of at least $0 by the end of the fall semester.</p><br>
+    <p id="today"></p>
     <p id="endOfSemester"></p><br>
-    
+
+<!--    <p id="dateError"></p> -->
+    <p id="daysUntilEnd"></p><br>
+
     <p>Put in your dining balance below:</p>
     <form id="frm1">
       Current Balance: <input type="number" name="fname" value = "0"><br><br>
     </form>
 
-    <p>Click the button below to get your answer:</p><br>
+    <p>Click the button below to get your answer:</p>
     
     <button onclick="calculateDailySpendRate()">Calculate</button>
+    <p id="result"></p>
   </body>
 
   
