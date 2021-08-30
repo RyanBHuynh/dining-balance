@@ -9,9 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Allows site to fit mobile screens -->
   </head>
 
-  <body>
+  <body onload="onload()">
     <h1>MU Dining Balance Calculator</h1><br>
     <p>This website calculates how much you can spend per day to get a balance of $0 by the end of the fall semester.</p><br>
+    <p id="endOfSemester"></p><br>
+    
     <p>Put in your dining balance below:</p>
     <form id="frm1">
       Current Balance: <input type="number" name="fname" value = "0"><br><br>
@@ -20,8 +22,6 @@
     <p>Click the button below to get your answer:</p><br>
     
     <button onclick="calculateDailySpendRate()">Calculate</button>
-      
-    <p id="today"></p>
   </body>
 
   
