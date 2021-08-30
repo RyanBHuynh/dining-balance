@@ -1,5 +1,7 @@
 //This function is called when the site loads
 function onload() {
+    
+    const options = {weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'}; //Set options for how the date is printed
     const endOfSemesterDate = new Date(2021,11,17); //Keeps track of the end of the semester
 
 //Store the last day of the semester
@@ -8,7 +10,7 @@ function onload() {
     const d = endOfSemesterDate.getDate();
 
 //Print the last day of the semester    
-    document.getElementById("endOfSemester").innerHTML = "The semester ends on " + m + "/" + d + "/" + y; 
+    document.getElementById("endOfSemester").innerHTML = "The semester ends on " + endOfSemesterDate.toLocaleDateString("en-US",options);
 }
 
 //This function is called when the user presses the 'Calculate' button
