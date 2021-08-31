@@ -40,16 +40,30 @@ function onload() {
 function calculateDailySpendRate() {
     let daysLeft = calculateDaysBetweenDates(today,semesterEndDate);
     if(daysLeft <= 0) {
-        document.getElementById("result").innerHTML = "The semester has ended already!";   
+        document.getElementById("result").innerHTML = "Sorry, the semester has already ended.";   
     }
 
     else {
         let input = document.getElementById("frm1");
         let currentBalance = parseFloat(input.elements[0].value); //Convert the values to floats and print them
         let res = (currentBalance / daysLeft).toFixed(2); //Round result to 2 decimal places
-        let output = res.toString(); //Convert res to a string
+        
+        if(Number.isNaN(currentBalance)) { //Check if the current balance is an invalid number
+            document.getElementById("result").innerHTML = "Error: an invalid value was entered.";
+        }
 
-        document.getElementById("result").innerHTML = "You can spend $" + output + " per day on average";
+        else if(currentBalance < 0) { //Check if the user entered a negative balance
+            document.getElementById("result").innerHTML = "Error: a negative balance was entered.";
+        }
+
+        else if(currentBalance >= 100000) { //Check if the user entered a balance greater than $100k
+            document.getElementById("result").innerHTML = "Are you sure you have that much in your dining account?";
+        }
+
+        else {
+            let output = res.toString(); //Convert res to a string
+            document.getElementById("result").innerHTML = "You can spend $" + output + " per day on average";
+        }
     }
 }
 
